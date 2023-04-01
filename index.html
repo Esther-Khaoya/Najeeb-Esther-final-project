@@ -2,23 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Fork Me! FCC: Test Suite Template - Product Landing Page</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
-
+<style>
+   /* Media query for smaller screens */
+   @media (max-width: 600px) {
+    #nav-bar ul {
+      flex-direction: column;
+    }
+    #nav-bar li {
+      margin: 10px 0;
+    }
+  }
+  .flex-container {
+  display: flex;
+  background-color: #ffffff;
+}
+ #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+ header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  padding: 1em;
+}
+</style>
   <body>
-    <h1>hello world</h1>
-    <h1>hello world, we are software developers!</h1>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-    Hello Camper!
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-    - The freeCodeCamp Team
-    -->
-    <script  src="js/index.js"></script>
+    <header id="header">
+      <img id="header-img" src="https://www.telegraph.co.uk/content/dam/family/2022/11/01/TELEMMGLPICT000314735064_trans_NvBQzQNjv4Bq-LJS7LKjeK9Zr8QxHnNHGwpwjfeuChtHUoe9wtZBhk8.jpeg" width="100px" height="100px" alt="Clothes Logo">
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" id="clothes" href="#clothes">Clothes</a></li>
+          <li><a class="nav-link" id="pricing" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link" id="contact" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section id="clothes">
+      <h2>Clothes</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+    
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <form class="flex-container" id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </section>
+    
+    <section>
+      <h2>Clothes - Shop Video</h2>
+       <video id="video" width="320" height="240" src="https://www.youtube.com/watch?v=ad8a2BiXulw" frameborder="0" allowfullscreen>
+       </video>
+    </section>
+    <foooter>Cars Landing Page</footer>
   </body>
 </html>
